@@ -1,0 +1,32 @@
+body {
+  background-color: rgb(236, 234, 234);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  nav{
+    background-color: goldenrod;
+  }
+
+    ul > li > a{
+    color: rgb(88, 88, 110);
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+   #appname{
+    color: rgb(88, 88, 110);
+    font-weight: bold;
+  }
+ 
+  main {
+    flex: 1 0 auto;
+    color: rgb(170, 130, 22);
+  }
+
+  footer.page-footer {
+    background-color: goldenrod;
+    padding-top: 0;
+    text-align: right;
+  }

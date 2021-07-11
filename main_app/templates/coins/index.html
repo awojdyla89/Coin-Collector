@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Coin List</h1>
+
+{% for coin in coins %}
+  <div class="card">
+    <!-- <a href="/coins/{{ coin.id }}"> -->
+        <a href="{% url 'detail' coin.id %}">
+    <div class="card-content">
+      <span class="card-title">{{ coin.name }}</span>
+      <p>Type of Metal: {{ coin.metallurgy }}</p>
+      <p>Description: {{ coin.description }}</p>
+      {% if coin.year > 0 %}
+        <p>Year: {{ coin.year }}</p>
+      {% else %}
+        <p>Year: Too Rare!</p>
+      {% endif %}
+    </div>
+    </a>
+  </div>
+{% endfor %}
+
+{% endblock %}
