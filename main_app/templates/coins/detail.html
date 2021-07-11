@@ -20,8 +20,8 @@
         </div>
       
         <div class="card-action">
-          <a href="{% url 'coins_update' coin.id %}">Edit</a>
-          <a href="{% url 'coins_delete' coin.id %}">Delete</a>
+          <a id="coin-modify-btn" href="{% url 'coins_update' coin.id %}">Edit</a>
+          <a id="coin-modify-btn" href="{% url 'coins_delete' coin.id %}">Delete</a>
         </div>
       
       </div>
@@ -32,7 +32,7 @@
     <form action="{% url 'add_appraisals' coin.id %}" method="post">
         {% csrf_token %}
         {{ appraisals_form.as_p }}
-        <input type="submit" class="btn" value="Add Appraisal">
+        <input type="submit" class="btn" id="add-appraisal-btn" value="Schedule Appraisal">
       </form>
     
 
@@ -84,7 +84,7 @@
             <div class="card-action">
               <form action="{% url 'assoc_grading' coin.id grade.id%}" method="post">
                 {% csrf_token %}
-                <button type="submit" class="btn">Add</button>
+                <button type="submit" class="btn" id="add-grading-btn">Add</button>
               </form>
             </div>
           </div>

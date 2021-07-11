@@ -27,6 +27,21 @@ body {
 
   footer.page-footer {
     background-color: goldenrod;
+    color: rgb(88, 88, 110);
     padding-top: 0;
     text-align: right;
   }
+
+  #add-appraisal-btn{
+    background-color: rgb(40, 164, 28);
+    
+  }
+
+  #add-grading-btn{
+    background-color: rgb(40, 164, 28);
+  }
+
+  #coin-modify-btn{
+    color: rgb(40, 164, 28);
+  }
+ 
