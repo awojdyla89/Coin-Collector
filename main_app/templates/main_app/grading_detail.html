@@ -11,8 +11,8 @@
         <p>Luster: {{ grading.luster }}</p>
       </div>
       <div class="card-action">
-        <a href="{% url 'gradings_update' grading.id %}">Edit</a>
-        <a href="{% url 'gradings_delete' grading.id %}">Delete</a>
+        <a id="coin-modify-btn" href="{% url 'gradings_update' grading.id %}">Edit</a>
+        <a id="coin-modify-btn" href="{% url 'gradings_delete' grading.id %}">Delete</a>
       </div>
     </div>
   </div>

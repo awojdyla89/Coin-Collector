@@ -6,7 +6,7 @@
 {% for grade in grading_list %}
   <a href="{% url 'gradings_detail' grade.id %}">
     <div class="card">
-        <div class="card-content">
+        <div class="card-content" id="grading-list">
             <span class="card-title">{{ grade.grading }}</span>
             <p>Luster: {{ grade.luster }}</p>
         </div>

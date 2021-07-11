@@ -7,7 +7,7 @@
   <div class="card">
     <!-- <a href="/coins/{{ coin.id }}"> -->
         <a href="{% url 'detail' coin.id %}">
-    <div class="card-content">
+    <div class="card-content" id="coin-list">
       <span class="card-title">{{ coin.name }}</span>
       <p>Type of Metal: {{ coin.metallurgy }}</p>
       <p>Description: {{ coin.description }}</p>

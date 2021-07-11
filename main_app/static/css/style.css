@@ -32,16 +32,24 @@ body {
     text-align: right;
   }
 
-  #add-appraisal-btn{
+  /* #add-appraisal-btn{
     background-color: rgb(40, 164, 28);
     
   }
 
   #add-grading-btn{
     background-color: rgb(40, 164, 28);
-  }
+  } */
 
+  .btn{
+    background-color: rgb(40, 164, 28);
+  }
   #coin-modify-btn{
     color: rgb(40, 164, 28);
   }
- 
+ #coin-list{
+   color: rgb(96, 164, 121);
+ }
+ #grading-list{
+  color: rgb(96, 164, 121);
+ }
